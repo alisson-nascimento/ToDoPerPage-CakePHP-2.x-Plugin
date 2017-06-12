@@ -10,5 +10,7 @@
 * Fazer o download do Plugin
 * Copiar conteúdo para Plugin/ToDoPerPage
 * No bootstrap.php => CakePlugin::load('ToDoPerPage');
-* No Layout, antes de </body> => <?=(Configure::read('debug')>0)?$this->element('ToDoPerPage.todotoolbar'):''?>  
+* Include jquery on page
+* No Layout, antes de </body> => 
+    <?=(Configure::read('debug')>0)?$this->element('ToDoPerPage.todotoolbar'):''?>  
 
