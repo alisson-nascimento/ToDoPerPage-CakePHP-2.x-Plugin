@@ -1,10 +1,13 @@
 <?php
 App::uses('Folder', 'Utility');
 App::uses('File', 'Utility');
-App::uses('AppController', 'Controller');
+App::uses('Security', 'Utility');
+App::uses('ToDoPerPageAppController', 'ToDoPerPage.Controller');
 
-class ToDoPerPageController extends AppController {
+class ToDoPerPageController extends ToDoPerPageAppController {
 	var $uses = array();
+        
+        public $components = array('Security');
         
         function beforeFilter() {
             parent::beforeFilter();
