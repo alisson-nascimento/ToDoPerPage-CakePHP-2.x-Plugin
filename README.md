@@ -12,5 +12,5 @@
 * No bootstrap.php => CakePlugin::load('ToDoPerPage');
 * Include jquery on page
 * No Layout, antes de </body> => 
-    <?=(Configure::read('debug')>0)?$this->element('ToDoPerPage.todotoolbar'):''?>  
+    <?php echo (Configure::read('debug')>0)?$this->element('ToDoPerPage.todotoolbar'):''?>  
 
