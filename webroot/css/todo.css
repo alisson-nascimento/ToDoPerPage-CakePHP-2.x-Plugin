@@ -19,6 +19,10 @@
     border-radius: 3px;
 }
 
+.todo-header #title, .todo-footer{
+    color: #333
+}
+
 .todo-footer,.todo-body{
     display: none;
     width: 600px;
